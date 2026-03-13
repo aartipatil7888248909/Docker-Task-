@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Docker App</title>
+
+<style>
+
+body{
+    background-color:#87CEEB;
+    text-align:center;
+    font-family:Arial;
+}
+
+.box{
+    margin-top:180px;
+    background:white;
+    width:400px;
+    padding:30px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:10px;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.2);
+}
+
+h1{
+    color:black;
+}
+
+button{
+    background-color:#007BFF;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    margin-top:15px;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color:#0056b3;
+}
+
+input{
+    padding:10px;
+    width:80%;
+    margin-top:10px;
+    border-radius:5px;
+    border:1px solid gray;
+}
+
+#message{
+    margin-top:15px;
+    font-size:18px;
+    color:green;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>Hello Aarti 🚀</h1>
+<h2>Python App Running in Docker</h2>
+
+<input type="text" id="name" placeholder="Enter your name">
+
+<br>
+
+<button onclick="showMessage()">Click Me</button>
+
+<p id="message"></p>
+
+</div>
+
+<script>
+
+function showMessage(){
+
+let name = document.getElementById("name").value;
+
+if(name === ""){
+    document.getElementById("message").innerHTML = "Please enter your name!";
+}
+else{
+    document.getElementById("message").innerHTML =
+    "Welcome " + name + " 🎉 Your Docker App is working!";
+}
+
+}
+
+</script>
+
+</body>
+</html>
